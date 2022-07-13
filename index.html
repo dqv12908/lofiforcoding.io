@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Barber shop website</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Leckerli+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section id="banner">
+             <img src="media/logo.png" alt="logo" class="logo">
+             <div class="banner-text">
+                <h1>HAIR STUDIO</h1>
+                <P>Style Your Hair Style Your Life</P>
+                <div class="banner-btn">
+                    <a href="#"><span></span>Find Out</a>
+                    <a href="#"><span></span>Read More</a>
+                </div>
+             </div>
+        </section>
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FEATURE</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">TESTIMONIALS</a></li>
+                    <li><a href="#">MEET US</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div id="menubtn">
+            <img src="media/menu.png" alt="menu" id="menu">
+        </div>
+        <div id="menubtn2">
+            <img src="media/close.png" alt="closemenu" id="close">
+        </div>
+
+        <section id="feature">
+            <div class="featuretext">
+                <p>Features</p>
+                <h1>Why Choose Us</h1>
+            </div>
+        </section>
+
+        <script>
+            var Menubtn = document.getElementById('menubtn')
+            var Sidenav = document.getElementById('sidenav')
+            var menu = document.getElementById('menu')
+
+            Menubtn.onclick = function(){
+                if(Sidenav.style.right=="-250px"){
+                    Sidenav.style.right="0";
+                    menu.src="media/close.png"
+                    
+                }else{
+                    Sidenav.style.right="-250px";
+                    menu.src="media/menu.png"
+                }
+            }
+
+        </script>
+    </body>
+
+</html>
